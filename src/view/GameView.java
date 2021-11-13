@@ -143,14 +143,9 @@ public class GameView extends JFrame {
         if (i<=9) {
             boolean acert = gameController.checkResponse(i, palpite);
 
-            if (acert) {
+            if (acert) 
                 points++;
                 
-            }
-            
-            System.out.println(service.getLegends(i).getIntro()+"====" + points);
-            
-        
         }  if (service.getLegends(i).getIntro().equals(10+""))  {
             dispose();
             CreditController.setPoints(points);
