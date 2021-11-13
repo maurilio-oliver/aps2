@@ -1,9 +1,9 @@
-import view.GameView;
+import view.HomeView;
 
 public class App {
     public static void main(String[] args) throws Exception {
       
-      new GameView();
+      new HomeView();
       
     }
 }

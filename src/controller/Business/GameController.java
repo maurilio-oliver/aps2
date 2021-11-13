@@ -18,6 +18,7 @@ public class GameController {
          String label_C = quests.get("c").toString();
          String label_D = quests.get("d").toString();
          String label_E = quests.get("e").toString();
+
          String response = quests.get("response").toString();
         service.add(intro, label_A, label_B, label_C, label_D, label_E, response);
         
@@ -33,7 +34,6 @@ public class GameController {
 
     public boolean checkResponse(int i, String palpite){
         String response = service.getResponse(i);
-
        
         if (palpite.equals(response)) {
             return true;

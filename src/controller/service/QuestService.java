@@ -30,7 +30,11 @@ public class QuestService {
     System.out.println("valor de i invalido ${maior que repositorio}");
     return null;
   }
-  }
+
+}
+public int getListSize(){
+ return QuestRepository.questList.size(); 
+}
   
   
 }
