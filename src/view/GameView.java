@@ -148,7 +148,7 @@ public class GameView extends JFrame {
         lc.setBounds(100, 500, 100, 20);
         ld.setBounds(100, 600, 100, 20);
         le.setBounds(100, 700, 100, 20);
-        intro.setBounds(450, 50, 800, 50);
+        intro.setBounds(50, 50, 800, 50);
 
         a.setBounds(10, 300,  60, 20);
         b.setBounds(10, 400,  60, 20);
