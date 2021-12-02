@@ -16,16 +16,18 @@ public class HomeView extends JFrame {
     JButton btnIntro = new JButton("introdução");
 
     public HomeView() {
+        
         /*
-         * loading functions
-         */
-
+        * loading functions
+        */
+        
         /*
-         * loading windons atributtes
-         */
+        * loading windons atributtes
+        */
         loadingComponents();
         loadingActionLiestenners();
-
+        
+        setDefaultCloseOperation(HomeView.EXIT_ON_CLOSE);
     }
 
     private void loadingComponents() {

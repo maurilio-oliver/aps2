@@ -33,8 +33,6 @@ public class GameView extends JFrame {
     JLabel le = new JLabel();
     JLabel intro = new JLabel();
 
-    JPanel panelContent = new JPanel();
-    
     public GameView() {
         gameController.loadingQList();
         setSize(800, 800);
@@ -48,37 +46,24 @@ public class GameView extends JFrame {
     }
     
     private void loadComponets() {
-        JPanel line0 = new JPanel();
-        JPanel line1 = new JPanel();
-        JPanel line2 = new JPanel();
-        JPanel line3 = new JPanel();
-        JPanel line4 = new JPanel();
-        JPanel line5 = new JPanel();
-
         
-        panelContent.setLayout((LayoutManager) new BoxLayout(panelContent, BoxLayout.Y_AXIS));
-        line0.add(intro);
-        line1.add(a);
-        line1.add(la);
-        line2.add(b);
-        line2.add(lb);
-        line3.add(c);
-        line3.add(lc);
-        line4.add(d);
-        line4.add(ld);
-        line5.add(e);
-        line5.add(le);
 
-
-        panelContent.add(line0);
-        panelContent.add(line1);
-        panelContent.add(line2);
-        panelContent.add(line3);
-        panelContent.add(line4);
-        panelContent.add(line5);
+            organizeLayout();
         
-       
-        add(panelContent);
+       add(a);
+       add(b);
+       add(c);
+       add(d);
+       add(e);
+
+       add(la);
+       add(lb);
+       add(lc);
+       add(ld);
+       add(le);
+
+
+        setLayout(null);
 
     }
 
@@ -151,5 +136,19 @@ public class GameView extends JFrame {
             CreditController.setPoints(points);
             new CreditView();
         }
+    }
+
+    void organizeLayout(){
+        la.setBounds(100, 300, 100, 20);
+        lb.setBounds(100, 400, 100, 20);
+        lc.setBounds(100, 500, 100, 20);
+        ld.setBounds(100, 600, 100, 20);
+        le.setBounds(100, 700, 100, 20);
+
+        a.setBounds(10, 300,  60, 20);
+        b.setBounds(10, 400,  60, 20);
+        c.setBounds(10, 500,  60, 20);
+        d.setBounds(10, 600,  60, 20);
+        e.setBounds(10, 700,  60, 20);
     }
 }
