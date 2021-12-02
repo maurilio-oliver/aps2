@@ -34,6 +34,7 @@ public class GameView extends JFrame {
     JLabel intro = new JLabel();
 
     public GameView() {
+        setDefaultCloseOperation(GameView.EXIT_ON_CLOSE);
         gameController.loadingQList();
         setSize(800, 800);
         setName("GameView");
@@ -61,6 +62,9 @@ public class GameView extends JFrame {
        add(lc);
        add(ld);
        add(le);
+
+       add(intro);
+
 
 
         setLayout(null);
@@ -144,11 +148,13 @@ public class GameView extends JFrame {
         lc.setBounds(100, 500, 100, 20);
         ld.setBounds(100, 600, 100, 20);
         le.setBounds(100, 700, 100, 20);
+        intro.setBounds(450, 50, 800, 50);
 
         a.setBounds(10, 300,  60, 20);
         b.setBounds(10, 400,  60, 20);
         c.setBounds(10, 500,  60, 20);
         d.setBounds(10, 600,  60, 20);
         e.setBounds(10, 700,  60, 20);
+
     }
 }
