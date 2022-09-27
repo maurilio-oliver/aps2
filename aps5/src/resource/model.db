@@ -1,0 +1,17 @@
+CREATE TABLE public.users (
+	id SERIAL PRIMARY KEY,
+	"name" varchar NOT NULL,
+	email varchar NOT NULL,
+	"password" varchar NOT NULL,
+	org varchar NULL,
+	charge varchar NULL,
+	contacts varchar NULL
+);
+
+CREATE TABLE public.messages (
+    id SERIAL PRIMARY KEY ,
+    "from" VARCHAR NOT NULL,
+   "to" VARCHAR NOT NULL,
+    "content" VARCHAR NULL,
+    sendAt DATE NULL
+);
